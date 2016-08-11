@@ -1,0 +1,12 @@
+
+@import 'basscss-base';
+
+body {
+  max-width: 1024px;
+  padding: 0 1.5em;
+  margin: auto;
+}
+
+img {
+  max-width: 100%;
+}

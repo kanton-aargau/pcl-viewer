@@ -1,0 +1,68 @@
+
+@import 'basscss';
+@import 'basscss-btn';
+
+/**
+ * Base
+ */
+
+* { box-sizing: border-box; }
+
+body { margin: 0; }
+
+/**
+ * Fonts
+ */
+
+.roboto {
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Roboto', sans-serif;
+}
+
+.thin { font-weight: 300; }
+
+/**
+ * Colors
+ */
+
+.bg-light-gray { background-color: #f1f1f1; }
+
+/**
+ * Borders
+ */
+
+.border-dashed { border-style: dashed; }
+
+/**
+ * Widths
+ */
+
+.fill-width { width: 100%; }
+.fill-height { height: 100%; }
+.fill-vh { height: 100vh; }
+
+/**
+ * Positioning
+ */
+
+.absolute-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/**
+ * Transition, Animations
+ */
+
+@keyframes shake {
+  0%, 100% {transform: translateX(0);}
+  10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+  20%, 40%, 60%, 80% {transform: translateX(10px);}
+}
+
+.shake {
+  animation-duration: 1s;
+  animation-name: shake;
+}
